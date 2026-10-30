@@ -278,7 +278,7 @@ footer.ft{background:#0F172A;color:#CBD5E1;margin:5rem 0 0}
 .dk-box strong{display:block;font-size:clamp(1.6rem,6vw,2.2rem);font-weight:700;line-height:1.2;margin-top:.15rem}
 .dk-p{color:var(--muted);line-height:1.6;margin:0 0 1rem}.dk-btns{margin:0;display:flex;gap:.75rem;flex-wrap:wrap}
 </style>
-<script type="application/json" id="pmgcfg">{"gAdd": 1750, "gDed": 2500, "oDed": 5, "sB": 0, "sAdd": 100, "anc": {"s": 3996.9, "fx": 33.7569}, "gta": {"bb": 63900, "bo": 64100, "oo": 64900, "tax": 62625.96, "at": "25/10/2569 09:00 (round 1)"}}</script>
+<script type="application/json" id="pmgcfg">{"gAdd": 1750, "gDed": 2500, "oDed": 5, "sB": 0, "sAdd": 100, "anc": {"s": 3996.9, "fx": 33.7569}, "gta": {"bb": 63900, "bo": 64100, "oo": 64900, "tax": 62625.96, "at": "25/10/2569 09:00 (round 1)"}, "prem": [-13, -21, -41, -40, -50, -53, -70, -82, -90], "grades": ["ทองแดงปอก", "ทองแดงช็อต", "สายโทร", "ทองแดงใหญ่", "ทองแดงเล็ก", "ทองแดงบดสะอาด", "ทองแดงบดผสม", "ทองแดงชุบขาว", "ทองแดงชุบขาว (ชิ้นงาน)"]}</script>
 <style>
 .dk-bo{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
 .dk-bo>div{border-radius:12px;padding:.8rem .85rem;min-width:0}
@@ -290,6 +290,13 @@ footer.ft{background:#0F172A;color:#CBD5E1;margin:5rem 0 0}
 :root[data-theme="dark"] .dk-bo .a small,:root[data-theme="dark"] .dk-bo .a strong{color:#4ad08d}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .dk-bo .b small,:root:not([data-theme="light"]) .dk-bo .b strong{color:#ff8a7a}:root:not([data-theme="light"]) .dk-bo .a small,:root:not([data-theme="light"]) .dk-bo .a strong{color:#4ad08d}}
 .dk-tax{margin-top:.7rem;font-size:.85rem;color:var(--muted)}
+</style>
+<style>
+.dk-v.dk-big{font-size:clamp(1.3rem,4.6vw,2rem);padding:.25rem 0}
+.dk-chg.dk-small{font-size:.75rem;font-weight:600;color:var(--muted)}
+.dk-list{margin-top:.9rem;border-top:1px solid var(--line)}
+.dk-row{display:flex;justify-content:space-between;gap:.75rem;padding:.7rem 0;border-bottom:1px solid var(--line);color:var(--ink);font-size:.95rem}
+.dk-row b{white-space:nowrap}.dk-u{font-weight:500;color:var(--muted);font-size:.8rem}
 </style>
 </head>
 <body>
@@ -329,7 +336,7 @@ footer.ft{background:#0F172A;color:#CBD5E1;margin:5rem 0 0}
 <p class="c" style="margin-top:2rem"><a class="btn pri" href="tel:0870858228">Call for a free quote</a> <a class="btn pri" href="https://line.me/ti/p/xHxtEqUloZ" target="_blank" rel="noopener" style="background:#06C755;border-color:#06C755;margin-left:.5rem">Chat on LINE</a></p></div></div>
 <div class="cfw" data-pages="contact"><h2>Send us an enquiry</h2><p class="fsub">Tell us what you would like to buy, sell or refine and we will reply.</p><form id="cform"><div class="r2"><div><label for="cf-name">Name</label><input id="cf-name" required autocomplete="name" data-ph-en="Your name" data-ph-th="ชื่อของคุณ"></div><div><label for="cf-phone">Phone</label><input id="cf-phone" type="tel" autocomplete="tel" data-ph-en="08x-xxx-xxxx" data-ph-th="08x-xxx-xxxx"></div></div><div><label for="cf-email">Email</label><input id="cf-email" type="email" required autocomplete="email" placeholder="your@email.com"></div><div class="r3"><div><label for="cf-type">I want to</label><select id="cf-type"><option data-v="sell">Sell to PMG Global</option><option data-v="buy">Buy from PMG Global</option><option data-v="refine">Refining</option><option data-v="test">Purity testing</option><option data-v="other">Something else</option></select></div><div><label for="cf-metal">Metal</label><select id="cf-metal"><option data-v="gold">Gold</option><option data-v="silver">Silver</option><option data-v="both">Gold and silver</option><option data-v="other">Other metal</option></select></div><div><label for="cf-weight">Approximate weight</label><input id="cf-weight" data-ph-en="e.g. 100 g" data-ph-th="เช่น 100 กรัม"></div></div><div><label for="cf-msg">Message</label><textarea id="cf-msg" rows="4" data-ph-en="Tell us more about your items" data-ph-th="บอกรายละเอียดเพิ่มเติมเกี่ยวกับสิ่งของของคุณ"></textarea></div><button class="btn pri" type="submit">Prepare email</button><p class="fnote" id="cf-note" hidden>Your email app should open with your enquiry filled in. Press send there. If it does not open, call us or message us on LINE.</p></form></div>
 <div class="band" data-pages="prices"><div class="in pw">
-<div class="dk-spots"><div class="dk-spot dk-g"><div class="n">Gold (XAU/USD)</div><input class="dk-in" id="pg" type="number" step="0.01" min="0" value="3996.90" aria-label="Gold USD per troy ounce"><div class="u">USD / troy oz</div><div class="dk-chg" id="dk-cg">&nbsp;</div></div><div class="dk-spot dk-s"><div class="n">Silver (XAG/USD)</div><input class="dk-in" id="ps" type="number" step="0.01" min="0" value="54.05" aria-label="Silver USD per troy ounce"><div class="u">USD / troy oz</div><div class="dk-chg" id="dk-cs">&nbsp;</div></div><div class="dk-spot dk-c"><div class="n">Copper</div><div class="dk-v">Set each morning</div><div class="u">Call for today's price</div><div class="dk-chg">&nbsp;</div></div><div class="dk-spot dk-f"><div class="n">Exchange rate</div><input class="dk-in" id="pf" type="number" step="0.0001" min="0" value="33.7569" aria-label="USD to THB"><div class="u">USD / THB</div><div class="dk-chg" id="dk-cf">&nbsp;</div></div></div>
+<div class="dk-spots"><div class="dk-spot dk-g"><div class="n">Gold (XAU/USD)</div><input class="dk-in" id="pg" type="number" step="0.01" min="0" value="3996.90" aria-label="Gold USD per troy ounce"><div class="u">USD / troy oz</div><div class="dk-chg" id="dk-cg">&nbsp;</div></div><div class="dk-spot dk-s"><div class="n">Silver (XAG/USD)</div><input class="dk-in" id="ps" type="number" step="0.01" min="0" value="54.05" aria-label="Silver USD per troy ounce"><div class="u">USD / troy oz</div><div class="dk-chg" id="dk-cs">&nbsp;</div></div><div class="dk-spot dk-c"><div class="n">Copper (LME)</div><div id="cu-on" hidden><div class="dk-v dk-big" id="cuv"></div><div class="u">USD / ton</div><div class="dk-chg dk-small"><span>Entered</span> <span id="cuw"></span><span id="cuby"> <span>by</span> <span id="cub"></span></span></div></div><div id="cu-off"><div class="dk-v">Set each morning</div><div class="u">Call for today's price</div><div class="dk-chg">&nbsp;</div></div></div><div class="dk-spot dk-f"><div class="n">Exchange rate</div><input class="dk-in" id="pf" type="number" step="0.0001" min="0" value="33.7569" aria-label="USD to THB"><div class="u">USD / THB</div><div class="dk-chg" id="dk-cf">&nbsp;</div></div></div>
 <p class="un" id="srcn" style="margin:1rem 0 0">These are the saved prices from the Gold Traders Association announcement of 25 Oct 2026, shown until the live feed connects. Prices move during the day, so please call us to confirm before you visit.</p>
 <div class="dk-tabs" role="tablist"><button type="button" role="tab" data-t="gold" aria-selected="true">Gold</button><button type="button" role="tab" data-t="silver" aria-selected="false">Silver</button><button type="button" role="tab" data-t="copper" aria-selected="false">Copper</button></div>
 <div class="dk-card" data-dk="gold"><div class="t">Gold 99.99%</div><div class="sub">THB / kg</div><div class="dk-bo"><div class="b"><small>Bid</small><strong id="g99b">&mdash;</strong></div><div class="a"><small>Offer</small><strong id="g99o">&mdash;</strong></div></div></div>
@@ -337,7 +344,7 @@ footer.ft{background:#0F172A;color:#CBD5E1;margin:5rem 0 0}
 <div class="dk-card" data-dk="gold"><div class="t">Gold 96.5% รูปพรรณ</div><div class="sub">THB / baht weight</div><div class="dk-bo"><div class="b"><small>Bid</small><strong id="ornb">&mdash;</strong></div><div class="a"><small>Offer</small><strong id="orno">&mdash;</strong></div></div><div class="dk-tax"><span>Tax base</span> ฿<span id="ornt">&mdash;</span></div></div>
 <div class="dk-card" data-dk="silver"><div class="t">Silver 99.99%</div><div class="sub">THB / kg</div><div class="dk-bo"><div class="b"><small>Bid</small><strong id="s99b">&mdash;</strong></div><div class="a"><small>Offer</small><strong id="s99o">&mdash;</strong></div></div></div>
 <div class="dk-card" data-dk="silver"><div class="t">Silver 92.5%</div><div class="sub">THB / kg</div><div class="dk-bo"><div class="b"><small>Bid</small><strong id="s925b">&mdash;</strong></div><div class="a"><small>Offer</small><strong id="s925o">&mdash;</strong></div></div></div>
-<div class="dk-card" data-dk="copper"><div class="t">Copper</div><div class="sub">THB / kg</div><p class="dk-p">Our copper price is set by hand each morning from the LME market. Call us or message us on LINE for today's price. To estimate a purchase, enter the price you were quoted in the estimator below.</p><p class="dk-btns"><a class="btn pri" href="tel:0870858228">Call for a free quote</a> <a class="btn pri" href="https://line.me/ti/p/xHxtEqUloZ" target="_blank" rel="noopener">Chat on LINE</a></p></div>
+<div class="dk-card" data-dk="copper"><div id="cuc-on" hidden><div class="t">LME Copper Price (Flat)</div><div class="sub">THB / kg</div><div class="dk-box"><small>Price</small><strong id="cuflat">&mdash;</strong></div><div class="dk-list" id="cugl"></div></div><div id="cuc-off"><div class="t">Copper</div><div class="sub">THB / kg</div><p class="dk-p">Our copper price is set by hand each morning from the LME market. Call us or message us on LINE for today's price. To estimate a purchase, enter the price you were quoted in the estimator below.</p><p class="dk-btns"><a class="btn pri" href="tel:0870858228">Call for a free quote</a> <a class="btn pri" href="https://line.me/ti/p/xHxtEqUloZ" target="_blank" rel="noopener">Chat on LINE</a></p></div></div>
 <div class="trd"><p class="lab">RATE HISTORY</p><h2 class="th2">Gold &amp; Silver Price Movement</h2><p class="un">USD per troy oz, live rates during this visit</p>
 <div class="g2">
 <div class="cc"><div class="ch"><div><b>Gold (XAU)</b><p class="un" style="margin:.1rem 0 0">USD per troy oz</p></div><div class="cl"><strong id="lg" style="color:#0A5BDB">&mdash;</strong><small>LATEST</small></div></div><svg id="cg" viewBox="0 0 440 200" role="img" aria-label="Gold price history chart"></svg></div>
@@ -780,6 +787,55 @@ mb.addEventListener("click",function(){mp.hidden=!mp.hidden;mb.setAttribute("ari
 setLang(LG);
 if(window.IntersectionObserver&&!matchMedia("(prefers-reduced-motion:reduce)").matches){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.15});
 [["#why .tile",.08],["#services .tile",.1],[".pcard",.1],[".svd",0]].forEach(function(g){document.querySelectorAll(g[0]).forEach(function(t,i){t.classList.add("rv");var d=(i*g[1]).toFixed(2)+"s";t.style.transitionDelay=d+","+d+",0s";io.observe(t)})})}
+</script>
+<script>
+(function(){var F=[["Copper (LME)", "\u0e17\u0e2d\u0e07\u0e41\u0e14\u0e07 (LME)"], ["Entered", "\u0e1a\u0e31\u0e19\u0e17\u0e36\u0e01\u0e40\u0e21\u0e37\u0e48\u0e2d"], ["by", "\u0e42\u0e14\u0e22"], ["USD / ton", "USD / \u0e15\u0e31\u0e19"], ["LME Copper Price (Flat)", "\u0e23\u0e32\u0e04\u0e32\u0e17\u0e2d\u0e07\u0e41\u0e14\u0e07 LME (Flat)"]];F.forEach(function(p){D[nm(p[0])]=p[1]});if(LG==="th")applyLang()})();
+</script>
+<script>
+(function () {
+  "use strict";
+  var DAY = 864e5, LME = null, PMC = null;
+  try { PMC = JSON.parse(document.getElementById("pmgcfg").textContent); } catch (e) {}
+  function el(i) { return document.getElementById(i); }
+  function fmt(s, d) { var n = parseFloat(s); return isFinite(n) ? n.toLocaleString("en-US", { minimumFractionDigits: d, maximumFractionDigits: d }) : "—"; }
+  // The LME copper price is typed by hand each morning into lme.json next to this page. It is valid for 24 hours.
+  function valid() { return !!LME && Date.now() - LME.at < DAY && LME.at <= Date.now() + 3e5; }
+  function paint() {
+    var ok = valid(), P = null;
+    if (ok && PMC) { try { P = PMGPricing.copper({ lme: LME.lme, fx: el("pf").value, adjustments: PMC.prem }); } catch (e) { P = null; } }
+    ok = ok && !!P;
+    el("cu-on").hidden = !ok; el("cu-off").hidden = ok; el("cuc-on").hidden = !ok; el("cuc-off").hidden = ok;
+    if (!ok) return;
+    el("cuv").textContent = fmt(LME.lme, 2);
+    el("cuw").textContent = new Date(LME.at).toLocaleString("en-GB", { day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit", timeZone: "Asia/Bangkok" });
+    el("cub").textContent = LME.by || "";
+    el("cuby").hidden = !LME.by;
+    el("cuflat").textContent = fmt(P.flat, 0);
+    var box = el("cugl"), key = P.flat + "|" + P.grades.join();
+    if (box.getAttribute("data-k") !== key) {
+      box.textContent = ""; box.setAttribute("data-k", key);
+      PMC.grades.forEach(function (n, i) {
+        var r = document.createElement("div"), a = document.createElement("span"), b = document.createElement("b"), u = document.createElement("span");
+        r.className = "dk-row"; a.textContent = n; b.textContent = fmt(P.grades[i], 0) + " "; u.className = "dk-u"; u.textContent = "THB / kg"; b.appendChild(u);
+        r.appendChild(a); r.appendChild(b); box.appendChild(r);
+      });
+      applyLang(el("cuc-on"));
+    }
+  }
+  function load() {
+    if (typeof fetch !== "function") return;
+    fetch("lme.json?t=" + Date.now(), { cache: "no-store" }).then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); }).then(function (d) {
+      var v = Number(d && d.lme), t = Date.parse(d && d.at);
+      LME = v > 0 && isFinite(v) && isFinite(t) ? { lme: v, at: t, by: String((d && d.by) || "").slice(0, 60) } : null;
+    }).catch(function () { /* keep the last good entry; the 24 hour rule still applies */ }).then(paint);
+  }
+  var sl = window.setLang; window.setLang = function (l) { sl(l); paint(); };
+  window.pmgCopperLoad = load; window.pmgCopperPaint = paint; // for tests
+  document.addEventListener("visibilitychange", function () { if (!document.hidden) load(); });
+  setInterval(load, 300000); setInterval(paint, 2000);
+  paint(); load();
+})();
+
 </script>
 <script>
 (function(){var F=[["Bid", "\u0e23\u0e31\u0e1a\u0e0b\u0e37\u0e49\u0e2d (Bid)"], ["Offer", "\u0e02\u0e32\u0e22\u0e2d\u0e2d\u0e01 (Offer)"], ["Tax base", "\u0e10\u0e32\u0e19\u0e20\u0e32\u0e29\u0e35"], ["Silver 92.5%", "\u0e40\u0e07\u0e34\u0e19 92.5%"], ["Sell to us", "\u0e02\u0e32\u0e22\u0e43\u0e2b\u0e49\u0e40\u0e23\u0e32"], ["Buy from us", "\u0e0b\u0e37\u0e49\u0e2d\u0e08\u0e32\u0e01\u0e40\u0e23\u0e32"], ["Product", "\u0e2a\u0e34\u0e19\u0e04\u0e49\u0e32"], ["Saved", "\u0e1a\u0e31\u0e19\u0e17\u0e36\u0e01\u0e44\u0e27\u0e49"], ["Gold 96.5% \u0e41\u0e17\u0e48\u0e07", "\u0e17\u0e2d\u0e07\u0e04\u0e33 96.5% \u0e41\u0e17\u0e48\u0e07"], ["Gold 96.5% \u0e23\u0e39\u0e1b\u0e1e\u0e23\u0e23\u0e13", "\u0e17\u0e2d\u0e07\u0e04\u0e33 96.5% \u0e23\u0e39\u0e1b\u0e1e\u0e23\u0e23\u0e13"], ["Sell to us at our bid, or buy from us at our offer, using the prices above.", "\u0e02\u0e32\u0e22\u0e43\u0e2b\u0e49\u0e40\u0e23\u0e32\u0e17\u0e35\u0e48\u0e23\u0e32\u0e04\u0e32\u0e23\u0e31\u0e1a\u0e0b\u0e37\u0e49\u0e2d \u0e2b\u0e23\u0e37\u0e2d\u0e0b\u0e37\u0e49\u0e2d\u0e08\u0e32\u0e01\u0e40\u0e23\u0e32\u0e17\u0e35\u0e48\u0e23\u0e32\u0e04\u0e32\u0e02\u0e32\u0e22\u0e2d\u0e2d\u0e01 \u0e15\u0e32\u0e21\u0e23\u0e32\u0e04\u0e32\u0e14\u0e49\u0e32\u0e19\u0e1a\u0e19"]];F.forEach(function(p){D[nm(p[0])]=p[1]});if(LG==="th")applyLang()})();
